@@ -1,0 +1,87 @@
+/* src/App.css */
+body {
+  font-family: "Inter", "Arial", sans-serif;
+  margin: 10px;
+  background: #f4f6fa;
+  overflow-y: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 6px 24px rgba(52, 58, 64, 0.08);
+  /* border-radius: 18px; */
+  background: #fff;
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.app header {
+  background-color: #23272f;
+  color: #fff;
+  padding: 32px 20px 24px 20px;
+  /* font-size: 2.2rem; */
+  letter-spacing: 1px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.app main {
+  flex-grow: 1; /* Ensures main content takes available space */
+  padding: 32px 20px;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #23272f;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.app footer {
+  background-color: #23272f;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto; /* Pushes footer to the bottom */
+  font-size: 1.1rem;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+@media (max-width: 900px) {
+  .app {
+    max-width: 98vw;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .app header,
+  .app main,
+  .app footer {
+    padding: 16px 6px;
+    font-size: 1rem;
+  }
+  .app {
+    min-height: 100vh;
+    border-radius: 0;
+    padding: 0;
+  }
+}

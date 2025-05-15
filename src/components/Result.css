@@ -1,0 +1,64 @@
+/* src/components/Result.css */
+.result-container {
+  text-align: center;
+  padding: 36px 18px;
+  background: #f4f6fa;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(52, 58, 64, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 600px;
+  min-height: 0;
+  overflow-y: auto;
+  color: #23272f;
+}
+
+.result-container h2 {
+  color: #0d8db6;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.result-container p {
+  font-size: 1.15rem;
+  margin-bottom: 25px;
+}
+
+.restart-button {
+  background: #28a745;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  transition: background 0.2s ease-in-out;
+}
+
+.restart-button:hover {
+  background: #218838;
+}
+
+@media (max-width: 600px) {
+  .result-container {
+    padding: 16px 4px;
+    border-radius: 6px;
+    width: 100vw;
+    min-width: 0;
+  }
+  .result-container h2 {
+    font-size: 1.2rem;
+  }
+  .restart-button {
+    padding: 10px 6px;
+    font-size: 0.95rem;
+  }
+}
